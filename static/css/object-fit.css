@@ -1,4 +1,8 @@
+img {
+    width: 150px;
+    height: 100px;
+}
+
 .fill {
-    background-color: aqua;
-    object-fit: fit;
+    object-fit: cover;
 }
