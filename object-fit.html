@@ -12,10 +12,50 @@
     <header>
         <h1>Object Fit</h1>
     </header>
-    <article class="fill">
-        <h2>Fill</h2>
-        <img src="static/img/capivara.jpg" alt="capivara">
-    </article>
+    <main>
+        <article>
+            <h2>Fill</h2>
+            <div>
+                <p>O conteúdo substituído é dimensionado para preencher a caixa de conteúdo do elemento: o tamanho concreto
+                    do objeto é a largura e a altura usadas do elemento.</p>
+                <img src="static/img/folder.png" alt="folder" class="fill">
+                <img src="static/img/folder.png" alt="folder" class="fill narrow">
+            </div>
+
+            <h2>Contain</h2>
+            <div>
+                <p>O conteúdo substituído é dimensionado para manter sua proporção enquanto se encaixa na caixa de conteúdo
+                    do elemento</p>
+                <img src="static/img/folder.png" alt="folder" class="contain">
+                <img src="static/img/folder.png" alt="folder" class="contain narrow">
+            </div>
+
+            <h2>Cover</h2>
+            <div>
+                <p>O conteúdo substituído é dimensionado para manter sua proporção e preencher toda a caixa de conteúdo do
+                    elemento: seu tamanho de objeto concreto é resolvido como uma restrição de capa contra a largura e a
+                    altura usadas do elemento.</p>
+                <img src="static/img/folder.png" alt="folder" class="cover">
+                <img src="static/img/folder.png" alt="folder" class="cover narrow">
+            </div>
+
+            <h2>None</h2>
+            <div>
+                <p>O conteúdo substituído não é redimensionado para caber dentro da caixa de conteúdo do elemento: o tamanho
+                    do objeto concreto do objeto é determinado usando o algoritmo de tamanho padrão sem tamanho especificado
+                    e um tamanho de objeto padrão igual à largura e altura usadas do elemento substituído.</p>
+                <img src="static/img/folder.png" alt="folder" class="none">
+                <img src="static/img/folder.png" alt="folder" class="none narrow">
+            </div>
+
+            <h2>Scale-down</h2>
+            <div>
+                <p>O conteúdo é dimensionado se none ou contain for especificado, o que resultaria em um tamanho menor de objeto concreto.</p>
+                <img src="static/img/folder.png" alt="folder" class="scale-down">
+                <img src="static/img/folder.png" alt="folder" class="scale-down narrow">
+            </div>
+        </article>
+    </main>
 </body>
 
 </html>
