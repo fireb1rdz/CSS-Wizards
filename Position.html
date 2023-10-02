@@ -127,9 +127,11 @@
             width: 200px;
             color: white;
             border-radius: 10px;
+            margin-bottom: 45px;
+            margin-top: 45px;
         }
 
-        .static {
+        .div-resolution {
             display: flex;
         }
 
@@ -152,6 +154,38 @@
         .listra {
             background-color: rgb(233, 233, 233);
         }
+
+        .box-relative {
+            position: relative;
+            top: 40px;
+            left: 40px;
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            border: 7px solid rgb(170, 170, 0);
+            margin-right: 20px;
+        }
+
+        .box-absolute {
+            position: absolute;
+            top: 2800px;
+            left: 40px;
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            border: 7px solid rgb(170, 170, 0);
+            margin-right: 20px;
+        }
+
+        .box-sticky {
+            position: sticky;
+            top: 20px;
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            border: 7px solid rgb(170, 170, 0);
+            margin-right: 20px;
+        }
     </style>
 </head>
 
@@ -167,8 +201,8 @@
                 <li><a class="link-nav" href="#introducao">Introdução</a></li>
                 <li><a class="link-nav" href="#tipos-posicionamento">Tipos de posicionamento</a></li>
                 <li><a class="link-nav" href="#relative">Relative</a></li>
-                <li><a class="link-nav" href="#">Absolute</a></li>
-                <li><a class="link-nav" href="#">Sticky</a></li>
+                <li><a class="link-nav" href="#absolute">Absolute</a></li>
+                <li><a class="link-nav" href="#sticky">Sticky</a></li>
                 <li><a class="link-nav-voltar" href="index.html">Voltar</a></li>
             </ul>
         </nav>
@@ -192,9 +226,33 @@
                 <p>Exemplo da propriedade na sua posição padrão (static):</p>
                 <p class="code"><span style="color: rgb(135, 225, 255);">position</span>: <span
                         style="color: rgb(0, 160, 0);">static</span>;</p>
-                <div class="static">
+                <div class="div-resolution">
                     <div class="box"></div>
                     <div class="box-static"></div>
+                    <div class="box"></div>
+                </div>
+            </article>
+            <article id="sticky">
+                <h3>Sticky:</h3>
+                <hr class="subtitle">
+                <p>
+                    Um elemento denominado com posicionamento adesivo, ou stickily positioned element, é um elemento
+                    determinado e calculado ao atribuir ao position como valor sticky. É tratado como posicionamento
+                    relativo até que alcance os limites do bloco que o envolve, semelhante a configurar a propriedade
+                    top com um valor diferente de auto. Quando a página é rolada, o elemento permanece "preso" ou "fixo"
+                    em seu fluxo principal até que alcance as bordas opostas do bloco que o contém.
+                </p>
+
+                <div class="code">
+                    <p><span style="color: rgb(135, 225, 255);">position</span>: <span
+                            style="color: rgb(0, 160, 0);">sticky</span>;</p>
+                    <p><span style="color: rgb(135, 225, 255);">top</span>: 20<span
+                            style="color: rgb(0, 160, 0);">px</span>;
+                </div>
+
+                <div class="div-resolution">
+                    <div class="box"></div>
+                    <div class="box-sticky"></div>
                     <div class="box"></div>
                 </div>
             </article>
@@ -216,6 +274,38 @@
                             style="color: rgb(0, 160, 0);">px</span>; <span
                             style="color: rgb(135, 225, 255);">left</span>: 40<span
                             style="color: rgb(0, 160, 0);">px</span>;</p>
+                </div>
+                <div class="div-resolution">
+                    <div class="box"></div>
+                    <div class="box-relative"></div>
+                    <div class="box"></div>
+                </div>
+            </article>
+            <article id="absolute">
+                <h3>Absolute:</h3>
+                <hr class="subtitle">
+                <p>
+                    Um elemento denominado com posicionamento absoluto, ou absolutely positioned element, é um elemento
+                    determinado e calculado ao atribuir ao position o valor absolute ou fixed. Com o top, right, bottom
+                    e left é possível especificar o deslocamento das laterais dos blocos que contêm os elementos. Os
+                    blocos que cercam um elemento são chamados de antecessores em relação à posição, conexão ou inclusão
+                    do elemento. Se o elemento tiver margens definidas, elas serão adicionadas ao deslocamento. O
+                    elemento criará um novo contexto de formatação de bloco (BFC) para seu conteúdo.
+                </p>
+
+                <div class="code">
+                    <p><span style="color: rgb(135, 225, 255);">position</span>: <span
+                            style="color: rgb(0, 160, 0);">absolute</span>;</p>
+                    <p><span style="color: rgb(135, 225, 255);">top</span>: 2800<span
+                            style="color: rgb(0, 160, 0);">px</span>; <span
+                            style="color: rgb(135, 225, 255);">left</span>: 40<span
+                            style="color: rgb(0, 160, 0);">px</span>;</p>
+                </div>
+
+                <div class="div-resolution">
+                    <div class="box"></div>
+                    <div class="box-absolute"></div>
+                    <div class="box"></div>
                 </div>
             </article>
         </section>
