@@ -7,10 +7,12 @@
 </head>
 <body>
     <h2>Utilizando max-width, min-width / max-height, min-height</h2>
-    <p>As propriedades CSS de height e width são usadas para definir a altura e a largura de um elemento.</p>
-    <p>As propriedades max-width e max-height são usadas para definir a largura e a altura máxima de um elemento.</p>
-    <p>A largura máxima pode ser especificada em valores de comprimento, como px, cm, etc., ou em porcentagem (%) do bloco que contém, ou definida como nenhuma (este é o padrão. Significa que não há largura máxima).</p>                
-    <p><strong>Dica:</strong> Arraste a janela do navegador para uma largura menor que 500px para ver a diferença entre as duas divs!</p>
+    <ul>
+    <li>As propriedades CSS de height e width são usadas para definir a altura e a largura de um elemento.</li>
+    <li>As propriedades max-width e max-height são usadas para definir a largura e a altura máxima de um elemento.</li>
+    <li>A largura máxima pode ser especificada em valores de comprimento, como px, cm, etc., ou em porcentagem (%) do bloco que contém, ou definida como nenhuma (este é o padrão. Significa que não há largura máxima).</li>
+    </ul>                
+
     <p>As propriedades de height e width podem ter os seguintes valores:</p>
         <p><strong>auto</strong> - Este é o padrão. O navegador calcula a altura e a largura</p>
         <p><strong>length</strong> - Define a altura/largura em px, cm, etc.</p>
@@ -19,6 +21,27 @@
         <p><strong>inherit</strong> - A altura/largura será herdada de seu valor pai</p>
     
     <h3><strong>Alguns exemplos:</strong></h3>
+    <p><mark>max-height: none;</mark> <mark> max-width: none;</mark></p>
+    <p>O elemento não tem limite em termos de altura ou largura.</p>
     
-</body>
+    <p><mark>max-height: 2000px;</mark> <mark style="color: green;"> max-width: 2000px;</mark></p>
+    <p>Se a altura/largura máxima for maior que a altura/largura real do elemento, a altura/largura máxima não terá efeito.</p>
+
+    <p><mark>max-height: 100px;</mark></p>
+    <p>Se o conteúdo não couber na altura máxima, ele transbordará. A forma como o contêiner lidará com esse conteúdo transbordante é definida pela propriedade overflow.</p>
+    <img src="img/imagem1.png" alt= Exemplo resultado conteúdo fora da altura máxima>
+
+    <p><mark>max-width: 150px;</mark></p>
+    <p>Se o conteúdo não couber na largura máxima, a altura do elemento será alterada automaticamente para acomodar o empacotamento do conteúdo.</p>
+    <img src="img/imagem2.png" alt= Exemplo resultado conteúdo acomodado na altura>
+
+    <p><mark>min-height: 0;</mark> <mark> min-width: 0;</mark></p>
+    <p>O elemento não tem altura/largura mínima.</p>
+
+    <p><mark>min-height: 200px;</mark> <mark> min-width: 300px;</mark></p>
+    <p>Se a altura/largura mínima for maior que a altura/largura real do elemento, a altura/largura mínima será aplicada.</p>
+    <img src="img/imagem3.png" alt= Exemplo resultado min-height e widht>
+
+    <p><mark>min-height: 5px;</mark> <mark> min-width: 5px;</mark></p>
+    <p>Se a altura/largura mínima for menor que a altura/largura real do elemento, a altura/largura  não terá efeito.</p>
 </html>
