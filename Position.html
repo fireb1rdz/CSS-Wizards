@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <style>
         body {
-            background-image: radial-gradient(at top left, gray, rgb(187, 187, 187));
+            background-image: radial-gradient(at top right, rgb(179, 179, 255), rgb(255, 172, 172));
             font-family: Arial, Helvetica, sans-serif;
         }
 
@@ -54,12 +54,11 @@
 
         ul {
             list-style-type: none;
-            padding: 0;
         }
 
         li {
             display: inline;
-            margin-right: 30px;
+            margin-right: 50px;
         }
 
         .link-nav-voltar {
@@ -89,6 +88,70 @@
         .link-nav:hover {
             color: rgb(114, 220, 255);
         }
+
+        .artigo,
+        section {
+            padding: 30px 100px 30px 100px;
+        }
+
+        hr {
+            margin-top: -20px;
+            border: none;
+            height: 3px;
+            width: 200px;
+            background-image: radial-gradient(at right, rgb(179, 179, 255), rgb(255, 172, 172));
+        }
+
+        .subtitle {
+            position: relative;
+            left: -390px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        h3 {
+            font-size: 25px;
+            margin-top: 100px;
+        }
+
+        p {
+            font-size: 19px;
+        }
+
+        .code {
+            background-color: rgb(117, 117, 117);
+            padding: 10px;
+            width: 200px;
+            color: white;
+            border-radius: 10px;
+        }
+
+        .static {
+            display: flex;
+        }
+
+        .box-static {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            border: 7px solid rgb(170, 170, 0);
+            margin-right: 20px;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border: 7px solid rgb(0, 0, 158);
+            margin-right: 20px;
+        }
+
+        .listra {
+            background-color: rgb(233, 233, 233);
+        }
     </style>
 </head>
 
@@ -101,15 +164,61 @@
     <main>
         <nav>
             <ul>
-                <li><a class="link-nav" href="#">Introdução</a></li>
-                <li><a class="link-nav" href="#">Tipos de posicionamento</a></li>
-                <li><a class="link-nav" href="#">Relative</a></li>
+                <li><a class="link-nav" href="#introducao">Introdução</a></li>
+                <li><a class="link-nav" href="#tipos-posicionamento">Tipos de posicionamento</a></li>
+                <li><a class="link-nav" href="#relative">Relative</a></li>
                 <li><a class="link-nav" href="#">Absolute</a></li>
                 <li><a class="link-nav" href="#">Sticky</a></li>
                 <li><a class="link-nav-voltar" href="index.html">Voltar</a></li>
             </ul>
         </nav>
-        
+        <article class="artigo" id="introducao">
+            <h2>Introdução</h2>
+            <hr>
+            <p>
+                Esta propriedade define como o elemento pode ser posicionado no documento. Pode ser acompanhada por
+                outras propriedades, tais como, top, right, bottom, left, que determinam como ficará a localização final
+                do objeto, permitindo seu deslocamento.
+            </p>
+        </article>
+        <section>
+            <article id="tipos-posicionamento listra">
+                <h2>Tipos de posicionamento</h2>
+                <hr>
+                <p>Um elemento posicionado é um elemento que sua posição pode ser calculada como relative, absolute,
+                    fixed ou sticky. ( Em outras palavras, são todos esses, com exceção do static, sendo estático o
+                    valor como padrão do elemento.)</p>
+
+                <p>Exemplo da propriedade na sua posição padrão (static):</p>
+                <p class="code"><span style="color: rgb(135, 225, 255);">position</span>: <span
+                        style="color: rgb(0, 160, 0);">static</span>;</p>
+                <div class="static">
+                    <div class="box"></div>
+                    <div class="box-static"></div>
+                    <div class="box"></div>
+                </div>
+            </article>
+            <article id="relative">
+                <h3>Relative:</h3>
+                <hr class="subtitle">
+                <p>
+                    Um elemento denominado com posicionamento relativo, ou relatively positioned element, é um elemento
+                    cuja função é calculada ao ser definida a position como valor relative. Com isso a propriedade top e
+                    bottom determinam o deslocamento vertical a partir da posição padrão do objeto definida pelo static;
+                    Não sendo outro, o left e o right, por sua vez, determinam sua posição horizontal. Veja um exemplo
+                    abaixo:
+                </p>
+
+                <div class="code">
+                    <p><span style="color: rgb(135, 225, 255);">position</span>: <span
+                            style="color: rgb(0, 160, 0);">relative</span>;</p>
+                    <p><span style="color: rgb(135, 225, 255);">top</span>: 40<span
+                            style="color: rgb(0, 160, 0);">px</span>; <span
+                            style="color: rgb(135, 225, 255);">left</span>: 40<span
+                            style="color: rgb(0, 160, 0);">px</span>;</p>
+                </div>
+            </article>
+        </section>
     </main>
 </body>
 
