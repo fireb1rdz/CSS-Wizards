@@ -1,0 +1,18 @@
+header {
+    text-align: center;
+}
+
+main {
+    height: auto;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    font-size: 2em;
+    text-align: center;
+    text-decoration: none;
+}
