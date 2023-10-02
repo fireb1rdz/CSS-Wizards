@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box sizing</title>
+    <style>
+        .border-box {
+            box-sizing: border-box;
+        }
+
+        .content-box {
+            box-sizing: content-box;
+        }
+
+        .container {
+            width: 300px;
+            margin: 20px;
+            padding: 10px;
+            border: 2px solid #333;
+        }
+        .content {
+            width: 100%;
+            padding: 20px;
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="border-box container">
+        <h1>Exemplo de Box-Sizing</h1>
+        <div class="border-box content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.</p>
+        </div>
+    </div>
+    <div class="content-box container">
+        <h1>Exemplo de Box-Sizing</h1>
+        <div class="content-box content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.</p>
+        </div>
+    </div>
+</body>
+</html>
