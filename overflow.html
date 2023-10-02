@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .overflow-auto {
+            width: 150px;
+            height: 200px;
+            background: #11e9f8;
+            margin-top: 40px;
+
+            /* Barra de rolagem */
+            overflow: auto;
+        }
+
+        .overflow-hidden {
+            width: 150px;
+            height: 200px;
+            background: #11e9f8;
+            margin-top: 40px;
+
+            /* Esconde parte do texto */
+            overflow: hidden;
+        }
+
+        .overflow-scroll {
+            width: 150px;
+            height: 200px;
+            background: #11e9f8;
+            margin-top: 40px;
+
+            /* Cria a barra de rolagem independente do conteúdo */
+            overflow: scroll;
+        }
+
+        .overflow-visible {
+            width: 150px;
+            height: 200px;
+            background: #11e9f8;
+            margin-top: 40px;
+            /* visibilidade */
+            overflow: visible;
+        }
+
+        .overflow-x {
+            width: 100px;
+            height: 200px;
+            background: #11e9f8;
+            margin-top: 40px;
+
+            overflow-x: scroll;
+        }
+
+        .overflow-y {
+            width: 100px;
+            height: 200px;
+            background: #11e9f8;
+            margin-top: 40px;
+            /* Cria a barra de rolagem na horizontal/vertical (x, y) */
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Overflow Visible</h2>
+    <p class="overflow-visible">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum minima laborum tenetur
+        vitae nemo in asperiores explicabo natus tempora quaerat! Iusto repellat labore placeat, totam eaque reiciendis
+        sunt! Eaque, aperiam.
+    </p>
+
+    <br><br>
+
+    <h2>Overflow Scroll</h2>
+    <p class="overflow-scroll">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae sed accusantium
+        obcaecati. Deleniti fugiat inventore sit adipisci dolorum accusantium facere alias, ullam temporibus qui neque
+        quod id illum rem perspiciatis?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos cumque non eveniet dolorem deserunt officia at
+        molestiae omnis, suscipit enim dicta distinctio totam exercitationem quia cum tenetur. Est, qui nihil!
+    </p>
+
+    <br><br>
+
+    <h2>Overflow Auto</h2>
+    <p class="overflow-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae sed accusantium obcaecati.
+        Deleniti fugiat inventore sit adipisci dolorum accusantium facere alias, ullam temporibus qui neque quod id
+        illum rem perspiciatis?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos cumque non eveniet dolorem deserunt officia at
+        molestiae omnis, suscipit enim dicta distinctio totam exercitationem quia cum tenetur. Est, qui nihil!
+    </p>
+
+    <h2>Overflow Hidden</h2>
+    <p class="overflow-hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae sed accusantium
+        obcaecati. Deleniti fugiat inventore sit adipisci dolorum accusantium facere alias, ullam temporibus qui neque
+        quod id illum rem perspiciatis?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos cumque non eveniet dolorem deserunt officia at
+        molestiae omnis, suscipit enim dicta distinctio totam exercitationem quia cum tenetur. Est, qui nihil!
+    </p>
+
+    <br><br>
+
+    <h2>Overflow-x</h2>
+    <p class="overflow-x">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae sed accusantium obcaecati.
+        Deleniti fugiat inventore sit adipisci dolorum accusantium facere alias, ullam temporibus qui neque quod id
+        illum rem perspiciatis?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos cumque non eveniet dolorem deserunt officia at
+        molestiae omnis, suscipit enim dicta distinctio totam exercitationem quia cum tenetur. Est, qui nihil!
+    </p>
+
+    <br><br>
+
+    <h2>Overflow-y</h2>
+    <p class="overflow-y">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae sed accusantium obcaecati.
+        Deleniti fugiat inventore sit adipisci dolorum accusantium facere alias, ullam temporibus qui neque quod id
+        illum rem perspiciatis?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos cumque non eveniet dolorem deserunt officia at
+        molestiae omnis, suscipit enim dicta distinctio totam exercitationem quia cum tenetur. Est, qui nihil!
+    </p>
+</body>
+
+</html>
