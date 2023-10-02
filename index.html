@@ -1,16 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Wizards</title>
+    <style>
+        .link-nav {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        .link-nav:hover {
+            color: rgb(114, 220, 255);
+        }
+
+        main {
+            background-color: white;
+            margin-right: 150px;
+            margin-left: 150px;
+            border-radius: 10px;
+        }
+
+        nav {
+            text-align: center;
+            padding: 10px;
+            background-color: rgb(233, 233, 233);
+            border-radius: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            display: inline;
+            margin-right: 50px;
+        }
+
+        header {
+            margin: 150px;
+            text-align: center;
+            color: white;
+        }
+    </style>
 </head>
+
 <body>
     <header>
         <h1>CSS Wizards</h1>
     </header>
-    <nav>
-
-    </nav>
+    <main>
+        <nav>
+            <ul>
+                <li><a class="link-nav" href="Position.html">Position</a></li>
+                <li><a class="link-nav" href="overflow.html">Overflow</a></li>
+                <li><a class="link-nav" href="background.html">Background</a></li>
+                <li><a class="link-nav" href="object-fit.html">Object-fit</a></li>
+                <li><a class="link-nav" href="ex_back.html">Exemplo background</a></li>
+            </ul>
+        </nav>
+    </main>
 </body>
+
 </html>

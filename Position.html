@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        body {
+            background-image: radial-gradient(at top right, rgb(179, 179, 255), rgb(255, 172, 172));
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .bi-arrows-move {
+            background-color: white;
+            padding: 20px;
+            color: rgb(255, 51, 51);
+            font-size: 50px;
+            border-radius: 100%;
+        }
+
+        h1 {
+            margin-top: 50px;
+            font-size: 50px;
+        }
+
+        .header {
+            color: rgba(255, 255, 255, 0.568);
+            font-size: 20px;
+        }
+
+        header {
+            margin: 150px;
+            text-align: center;
+            color: white;
+        }
+
+        main {
+            background-color: white;
+            margin-right: 150px;
+            margin-left: 150px;
+            border-radius: 10px;
+        }
+
+        nav {
+            text-align: center;
+            padding: 10px;
+            background-color: rgb(233, 233, 233);
+            border-radius: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            display: inline;
+            margin-right: 50px;
+        }
+
+        .link-nav-voltar {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 18px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            padding: 10px;
+            background-color: rgb(255, 121, 121);
+            border-radius: 10px;
+        }
+
+        .link-nav-voltar:hover {
+            color: white;
+            background-color: rgb(255, 0, 0);
+        }
+
+        .link-nav {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        .link-nav:hover {
+            color: rgb(114, 220, 255);
+        }
+
+        .artigo,
+        section {
+            padding: 30px 100px 30px 100px;
+        }
+
+        hr {
+            margin-top: -20px;
+            border: none;
+            height: 3px;
+            width: 200px;
+            background-image: radial-gradient(at right, rgb(179, 179, 255), rgb(255, 172, 172));
+        }
+
+        .subtitle {
+            position: relative;
+            left: -390px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        h3 {
+            font-size: 25px;
+            margin-top: 100px;
+        }
+
+        p {
+            font-size: 19px;
+        }
+
+        .code {
+            background-color: rgb(117, 117, 117);
+            padding: 10px;
+            width: 200px;
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 45px;
+            margin-top: 45px;
+        }
+
+        .div-resolution {
+            display: flex;
+        }
+
+        .box-static {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            border: 7px solid rgb(170, 170, 0);
+            margin-right: 20px;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border: 7px solid rgb(0, 0, 158);
+            margin-right: 20px;
+        }
+
+        .listra {
+            background-color: rgb(233, 233, 233);
+        }
+
+        .box-relative {
+            position: relative;
+            top: 40px;
+            left: 40px;
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            border: 7px solid rgb(170, 170, 0);
+            margin-right: 20px;
+        }
+
+        .box-absolute {
+            position: absolute;
+            top: 2800px;
+            left: 40px;
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            border: 7px solid rgb(170, 170, 0);
+            margin-right: 20px;
+        }
+
+        .box-sticky {
+            position: sticky;
+            top: 20px;
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            border: 7px solid rgb(170, 170, 0);
+            margin-right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <i class="bi bi-arrows-move"></i>
+        <h1>Position</h1>
+        <p class="header">Propriedade de posição do CSS</p>
+    </header>
+    <main>
+        <nav>
+            <ul>
+                <li><a class="link-nav" href="#introducao">Introdução</a></li>
+                <li><a class="link-nav" href="#tipos-posicionamento">Tipos de posicionamento</a></li>
+                <li><a class="link-nav" href="#relative">Relative</a></li>
+                <li><a class="link-nav" href="#absolute">Absolute</a></li>
+                <li><a class="link-nav" href="#sticky">Sticky</a></li>
+                <li><a class="link-nav-voltar" href="index.html">Voltar</a></li>
+            </ul>
+        </nav>
+        <article class="artigo" id="introducao">
+            <h2>Introdução</h2>
+            <hr>
+            <p>
+                Esta propriedade define como o elemento pode ser posicionado no documento. Pode ser acompanhada por
+                outras propriedades, tais como, top, right, bottom, left, que determinam como ficará a localização final
+                do objeto, permitindo seu deslocamento.
+            </p>
+        </article>
+        <section>
+            <article id="tipos-posicionamento listra">
+                <h2>Tipos de posicionamento</h2>
+                <hr>
+                <p>Um elemento posicionado é um elemento que sua posição pode ser calculada como relative, absolute,
+                    fixed ou sticky. ( Em outras palavras, são todos esses, com exceção do static, sendo estático o
+                    valor como padrão do elemento.)</p>
+
+                <p>Exemplo da propriedade na sua posição padrão (static):</p>
+                <p class="code"><span style="color: rgb(135, 225, 255);">position</span>: <span
+                        style="color: rgb(0, 160, 0);">static</span>;</p>
+                <div class="div-resolution">
+                    <div class="box"></div>
+                    <div class="box-static"></div>
+                    <div class="box"></div>
+                </div>
+            </article>
+            <article id="sticky">
+                <h3>Sticky:</h3>
+                <hr class="subtitle">
+                <p>
+                    Um elemento denominado com posicionamento adesivo, ou stickily positioned element, é um elemento
+                    determinado e calculado ao atribuir ao position como valor sticky. É tratado como posicionamento
+                    relativo até que alcance os limites do bloco que o envolve, semelhante a configurar a propriedade
+                    top com um valor diferente de auto. Quando a página é rolada, o elemento permanece "preso" ou "fixo"
+                    em seu fluxo principal até que alcance as bordas opostas do bloco que o contém.
+                </p>
+
+                <div class="code">
+                    <p><span style="color: rgb(135, 225, 255);">position</span>: <span
+                            style="color: rgb(0, 160, 0);">sticky</span>;</p>
+                    <p><span style="color: rgb(135, 225, 255);">top</span>: 20<span
+                            style="color: rgb(0, 160, 0);">px</span>;
+                </div>
+
+                <div class="div-resolution">
+                    <div class="box"></div>
+                    <div class="box-sticky"></div>
+                    <div class="box"></div>
+                </div>
+            </article>
+            <article id="relative">
+                <h3>Relative:</h3>
+                <hr class="subtitle">
+                <p>
+                    Um elemento denominado com posicionamento relativo, ou relatively positioned element, é um elemento
+                    cuja função é calculada ao ser definida a position como valor relative. Com isso a propriedade top e
+                    bottom determinam o deslocamento vertical a partir da posição padrão do objeto definida pelo static;
+                    Não sendo outro, o left e o right, por sua vez, determinam sua posição horizontal. Veja um exemplo
+                    abaixo:
+                </p>
+
+                <div class="code">
+                    <p><span style="color: rgb(135, 225, 255);">position</span>: <span
+                            style="color: rgb(0, 160, 0);">relative</span>;</p>
+                    <p><span style="color: rgb(135, 225, 255);">top</span>: 40<span
+                            style="color: rgb(0, 160, 0);">px</span>; <span
+                            style="color: rgb(135, 225, 255);">left</span>: 40<span
+                            style="color: rgb(0, 160, 0);">px</span>;</p>
+                </div>
+                <div class="div-resolution">
+                    <div class="box"></div>
+                    <div class="box-relative"></div>
+                    <div class="box"></div>
+                </div>
+            </article>
+            <article id="absolute">
+                <h3>Absolute:</h3>
+                <hr class="subtitle">
+                <p>
+                    Um elemento denominado com posicionamento absoluto, ou absolutely positioned element, é um elemento
+                    determinado e calculado ao atribuir ao position o valor absolute ou fixed. Com o top, right, bottom
+                    e left é possível especificar o deslocamento das laterais dos blocos que contêm os elementos. Os
+                    blocos que cercam um elemento são chamados de antecessores em relação à posição, conexão ou inclusão
+                    do elemento. Se o elemento tiver margens definidas, elas serão adicionadas ao deslocamento. O
+                    elemento criará um novo contexto de formatação de bloco (BFC) para seu conteúdo.
+                </p>
+
+                <div class="code">
+                    <p><span style="color: rgb(135, 225, 255);">position</span>: <span
+                            style="color: rgb(0, 160, 0);">absolute</span>;</p>
+                    <p><span style="color: rgb(135, 225, 255);">top</span>: 2800<span
+                            style="color: rgb(0, 160, 0);">px</span>; <span
+                            style="color: rgb(135, 225, 255);">left</span>: 40<span
+                            style="color: rgb(0, 160, 0);">px</span>;</p>
+                </div>
+
+                <div class="div-resolution">
+                    <div class="box"></div>
+                    <div class="box-absolute"></div>
+                    <div class="box"></div>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
